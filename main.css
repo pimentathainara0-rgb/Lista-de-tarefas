@@ -1,0 +1,93 @@
+body {
+    font-family: monospace;
+}
+ul {
+    font-family: helvetica;
+}
+li {
+    list-style: circle;
+}
+.list {
+    list-style: square;
+}
+#msg {
+    font-family: monospace;
+}
+.light-theme {
+    color: var(--black);
+    background: var(--plum);
+}
+.dark-theme {
+    color: var(--plum);
+    background: var(--black);
+}
+:root {
+    --plum: #DDA0DD;
+    --black: #000000;
+}
+* {
+    color: var(--fontColor);
+    font-family: helvetica;
+}
+body {
+    background: var(--bg)
+}
+.btn {
+    position: absolute;
+    top: 20px;
+    left: 250px;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    border: none;
+    color: var(--btnFontColor);
+    background-color: var(--btnBg);
+}
+.btn:focus { outline-style: none;}
+
+.light-theme {
+    --bg: var(--plum);
+    --fontColor: var(--black);
+    --btnBg: var(--black);
+    --btnFontColor: var(--plum);
+}
+
+.dark-theme {
+    --bg: var(--black);
+    --fontColor: var(--plum);
+    --btnBg: var(--plum);
+    --btnFontColor: var(--black);
+}
+
+/* style.css */
+.meu-botao {
+    background-color: var(--plum);
+    color:#fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.meu-botao:hover {
+    background-color: var(--btnBg);
+}
+
+#adicionar:hover {
+  background-color: var(--btnBg);
+}
+#adicionar {
+  background-color: var(--plum);
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+
+#adicionar:hover {
+  background-color: var(--btnBg);
+}
