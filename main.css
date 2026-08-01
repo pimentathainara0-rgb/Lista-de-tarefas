@@ -91,3 +91,7 @@ body {
 #adicionar:hover {
   background-color: var(--btnBg);
 }
+.completed span {
+    text-decoration: line-through;
+    opacity: 0.7;
+}
