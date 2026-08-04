@@ -33,16 +33,16 @@ body {
     background: var(--bg)
 }
 .btn {
-    position: absolute;
-    top: 20px;
-    left: 250px;
-    height: 50px;
-    width: 50px;
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    width: 40px;
+    height: 40px;
     border-radius: 50%;
-    border: none;
-    color: var(--btnFontColor);
-    background-color: var(--btnBg);
+    font-size: 14px;
+    padding: 0;
 }
+
 .btn:focus { outline-style: none;}
 
 .light-theme {
@@ -59,39 +59,99 @@ body {
     --btnFontColor: var(--black);
 }
 
-/* style.css */
-.meu-botao {
-    background-color: var(--plum);
-    color:#fff;
+.btn {
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    font-size: 13px;
+    padding: 0;
+    background-color: var(--btnBg);
+    color: var(--btnFontColor);
     border: none;
-    padding: 10px 20px;
+    cursor: pointer;
+}
+
+#adicionar {
+    background-color: var(--btnBg);
+    color: var(--btnFontColor);
+    border: none;
+    padding: 8px 14px;
     border-radius: 5px;
     cursor: pointer;
-    font-size: 16px;
+    font-size: 14px;
 }
 
-.meu-botao:hover {
+#adicionar:hover,
+.btn:hover {
+    background-color: var(--fontColor);
+    color: var(--bg);
+}
+
+.calendar-row {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 12px;
+}
+
+.calendar-row input[type="date"] {
+    padding: 6px 8px;
+    border-radius: 5px;
+    border: 1px solid rgba(0,0,0,0.2);
+    background: transparent;
+    color: var(--fontColor);
+}
+
+.calendar-row button {
     background-color: var(--btnBg);
+    color: var(--btnFontColor);
+    border: none;
+    border-radius: 5px;
+    width: 34px;
+    height: 34px;
+    cursor: pointer;
 }
 
-#adicionar:hover {
-  background-color: var(--btnBg);
-}
-#adicionar {
-  background-color: var(--plum);
-  color: #fff;
-  border: none;
-  padding: 10px 20px;
-  border-radius: 5px;
-  cursor: pointer;
-  font-size: 16px;
-}
-
-
-#adicionar:hover {
-  background-color: var(--btnBg);
+.completed span {
+    text-decoration: line-through;
+    opacity: 0.7;
 }
 .completed span {
     text-decoration: line-through;
     opacity: 0.7;
+}
+
+#loginArea {
+    max-width: 320px;
+    margin: 40px auto;
+    padding: 16px;
+    border-radius: 8px;
+    background: rgba(255, 255, 255, 0.6);
+    text-align: center;
+}
+#loginArea input {
+    display: block;
+    width: 90%;
+    padding: 8px;
+    margin: 8px auto;
+    border-radius: 4px;
+    border: 1px solid rgba(0,0,0,0.1);
+    background: transparent;
+    color: var(--fontColor);
+}
+.login-actions button {
+    margin: 6px;
+    padding: 8px 12px;
+    border-radius: 6px;
+    border: none;
+    background-color: var(--btnBg);
+    color: var(--btnFontColor);
+    cursor: pointer;
+}
+#userDisplay {
+    margin-left: 12px;
+    font-weight: bold;
 }
